@@ -1,4 +1,4 @@
-module eth-top-markets
+module github.com/romanornr/eth-top-markets
 
 go 1.15
 

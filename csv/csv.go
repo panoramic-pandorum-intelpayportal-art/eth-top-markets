@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func topEthMarkets()  {
+func TopEthMarkets()  {
 	file, err := os.OpenFile("test.csv", os.O_CREATE|os.O_WRONLY, 0777)
 	defer file.Close()
 
