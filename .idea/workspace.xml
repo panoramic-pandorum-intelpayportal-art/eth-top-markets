@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1585945b-ec32-4efb-9d8a-34d7d75c4815" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/csv/csv.go" beforeDir="false" afterPath="$PROJECT_DIR$/csv/csv.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/csv.go" beforeDir="false" afterPath="$PROJECT_DIR$/csv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$USER_HOME$/go" />
+      </list>
+    </option>
+    <option name="useGoPathFromSystemEnvironment" value="false" />
+  </component>
   <component name="ProjectId" id="1iyoh6HBxbXx1A1BX4XTjlX435x" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,6 +41,9 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
@@ -42,9 +56,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/csv" />
     </key>
   </component>
@@ -61,9 +77,17 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="976" y="436" width="213" height="268" key="EnvironmentVariablesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1602890595391" />
-    <state x="429" y="464" width="379" height="608" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602892378722">
+    <state x="844" y="384" width="424" height="482" key="FileChooserDialogImpl" timestamp="1602893064388">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="429" y="464" width="379" height="608" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1602892378722" />
+    <state x="844" y="384" width="424" height="482" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1602893064388" />
+    <state x="550" y="261" key="SettingsEditor" timestamp="1602893200948">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="550" y="261" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1602893200948" />
+    <state x="429" y="464" width="379" height="596" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602897752072">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="429" y="464" width="379" height="596" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1602897752072" />
   </component>
 </project>

@@ -1,9 +1,7 @@
 package main
 
 import (
-	"github.com/romanornr/eth-top-markets/csvEth"
 	"encoding/json"
-	"fmt"
 	"github.com/sirupsen/logrus"
 	"io/ioutil"
 	"net/http"
@@ -11,11 +9,9 @@ import (
 	"time"
 )
 
-func main()  {
-
-	//csvEth.TopEthMarkets()
-
-	//GetEthereumTokens()
+func main() {
+	ethMarkets := GetEthereumTokens()
+	csvWriteEthTopMarkets(ethMarkets)
 }
 
 type EthMarket struct {
@@ -80,17 +76,17 @@ type EthMarket struct {
 	} `json:"totals"`
 }
 
-func GetEthereumTokens() {
-	apiEndpoint, err := url.Parse("https://api.ethplorer.io/getTop?apiKey=freekey&criteria=cap&limit=4")
+func GetEthereumTokens() *EthMarket {
+	apiEndpoint, err := url.Parse("https://api.ethplorer.io/getTop?apiKey=freekey&criteria=cap&limit=110")
 	if err != nil {
 		logrus.Fatalf("could not parse url endpoint: %s\n", err)
 	}
 
 	client := http.Client{
-		Transport: nil,
+		Transport:     nil,
 		CheckRedirect: nil,
-		Jar: nil,
-		Timeout: time.Second * 15,
+		Jar:           nil,
+		Timeout:       time.Second * 15,
 	}
 
 	req, err := http.NewRequest(http.MethodGet, apiEndpoint.String(), nil)
@@ -112,6 +108,5 @@ func GetEthereumTokens() {
 	tokens := new(EthMarket)
 	err = json.Unmarshal(body, &tokens)
 
-	fmt.Println(tokens)
-
+	return tokens
 }
