@@ -77,7 +77,7 @@ type EthMarket struct {
 }
 
 func GetEthereumTokens() *EthMarket {
-	apiEndpoint, err := url.Parse("https://api.ethplorer.io/getTop?apiKey=freekey&criteria=trade&limit=120")
+	apiEndpoint, err := url.Parse("https://api.ethplorer.io/getTop?apiKey=freekey&criteria=trade&limit=150")
 	if err != nil {
 		logrus.Fatalf("could not parse url endpoint: %s\n", err)
 	}

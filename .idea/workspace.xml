@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1585945b-ec32-4efb-9d8a-34d7d75c4815" name="Default Changelist" comment="" />
+    <list default="true" id="1585945b-ec32-4efb-9d8a-34d7d75c4815" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv.go" beforeDir="false" afterPath="$PROJECT_DIR$/csv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokens.csv" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,9 +84,9 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="550" y="261" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1602893200948" />
-    <state x="429" y="464" width="379" height="594" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602898301578">
+    <state x="429" y="464" width="379" height="594" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602899574033">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="429" y="464" width="379" height="594" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1602898301578" />
+    <state x="429" y="464" width="379" height="594" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1602899574033" />
   </component>
 </project>

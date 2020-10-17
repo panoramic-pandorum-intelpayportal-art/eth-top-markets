@@ -14,7 +14,7 @@ func csvWriteEthTopMarkets(market *EthMarket) {
 		os.Exit(1)
 	}
 
-	info := []string{"Name", "symbol", "contract address", "decimals", "coingecko", "logo"}
+	info := []string{"Name", "symbol", "address", "owner", "decimals", "coingecko", "logo"}
 
 	writer := csv.NewWriter(file)
 	defer writer.Flush()
@@ -22,17 +22,16 @@ func csvWriteEthTopMarkets(market *EthMarket) {
 	err = writer.Write(info)
 
 	for _, token := range market.Tokens {
-		tokenInfo := []string{token.Name, token.Symbol, "https://etherscan.io/address/"+token.Address, token.Decimals, "https://www.coingecko.com/en/coins/" + token.Coingecko, "https://ethplorer.io" + token.Image}
-
 		if token.Symbol == "ETH" || token.Symbol == "USDT" {
 			continue
 		}
 
-		// do not list tokens which are not on coingecko
-		if token.Coingecko == "" {
+		// do not list tokens which are not on coingecko or don't have an address
+		if token.Coingecko == ""|| token.Address == "" {
 			continue
 		}
 
+		tokenInfo := []string{token.Name, "https://etherscan.io/address/"+token.Address, token.Owner, token.Decimals, "https://www.coingecko.com/en/coins/" + token.Coingecko, "https://ethplorer.io" + token.Image}
 		err = writer.Write(tokenInfo)
 	}
 }
