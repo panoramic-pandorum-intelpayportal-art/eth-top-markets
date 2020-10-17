@@ -22,7 +22,7 @@ func csvWriteEthTopMarkets(market *EthMarket) {
 	err = writer.Write(info)
 
 	for _, token := range market.Tokens {
-		if token.Symbol == "ETH" || token.Symbol == "USDT" || token.Symbol == "BVOL" || token.Symbol == "IBVOL"{
+		if token.Symbol == "ETH" || token.Symbol == "USDT" || token.Symbol == "BVOL" || token.Symbol == "IBVOL" || token.Symbol == "AMPL" || token.Symbol == "XAMP" {
 			continue
 		}
 
