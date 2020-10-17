@@ -27,6 +27,12 @@ func csvWriteEthTopMarkets(market *EthMarket) {
 		if token.Symbol == "ETH" || token.Symbol == "USDT" {
 			continue
 		}
+
+		// do not list tokens which are not on coingecko
+		if token.Coingecko == "" {
+			continue
+		}
+
 		err = writer.Write(tokenInfo)
 	}
 }
