@@ -31,7 +31,7 @@ func csvWriteEthTopMarkets(market *EthMarket) {
 			continue
 		}
 
-		tokenInfo := []string{token.Name, "https://etherscan.io/address/"+token.Address, token.Owner, token.Decimals, "https://www.coingecko.com/en/coins/" + token.Coingecko, "https://ethplorer.io" + token.Image}
+		tokenInfo := []string{token.Name, token.Symbol, "https://etherscan.io/address/"+token.Address, token.Owner, token.Decimals, "https://www.coingecko.com/en/coins/" + token.Coingecko, "https://ethplorer.io" + token.Image}
 		err = writer.Write(tokenInfo)
 	}
 }
