@@ -22,12 +22,12 @@ func csvWriteEthTopMarkets(market *EthMarket) {
 	err = writer.Write(info)
 
 	for _, token := range market.Tokens {
-		if token.Symbol == "ETH" || token.Symbol == "USDT" {
+		if token.Symbol == "ETH" || token.Symbol == "USDT" || token.Symbol == "BVOL" || token.Symbol == "IBVOL"{
 			continue
 		}
 
 		// do not list tokens which are not on coingecko or don't have an address
-		if token.Coingecko == ""|| token.Address == "" {
+		if token.Coingecko == "" || token.Address == "" {
 			continue
 		}
 
