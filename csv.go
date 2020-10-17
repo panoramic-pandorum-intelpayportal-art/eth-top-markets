@@ -22,7 +22,7 @@ func csvWriteEthTopMarkets(market *EthMarket) {
 	err = writer.Write(info)
 
 	for _, token := range market.Tokens {
-		tokenInfo := []string{token.Name, token.Symbol, token.Address, token.Decimals, "https://www.coingecko.com/en/coins/" + token.Coingecko, "https://ethplorer.io" + token.Image}
+		tokenInfo := []string{token.Name, token.Symbol, "https://etherscan.io/address/"+token.Address, token.Decimals, "https://www.coingecko.com/en/coins/" + token.Coingecko, "https://ethplorer.io" + token.Image}
 
 		if token.Symbol == "ETH" || token.Symbol == "USDT" {
 			continue
